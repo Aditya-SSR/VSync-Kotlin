@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The V-Sync mark: two pieces of a V. Drawn in black; tint it in code. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp" android:height="48dp"
+    android:viewportWidth="100" android:viewportHeight="100">
+    <path android:fillColor="#FF000000"
+        android:pathData="M8.5,20 L37,20 C45.5,20 51.5,27 51.5,35 C51.5,38 50.8,40.8 49.3,43.3 L36.6,64.6 Z" />
+    <path android:fillColor="#FF000000"
+        android:pathData="M91.5,20 L50,88 L40.4,72.3 L60.8,38.5 C66.6,28.6 74,20 84,20 Z" />
+</vector>

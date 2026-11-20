@@ -1,0 +1,22 @@
+[package]
+name = "vsync_bridge"
+version = "0.1.0"
+edition = "2021"
+description = "JNI wrapper around the unchanged lib_vtop scraper, for the Kotlin app"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# The scraper lives in this repo at ../rust (unchanged from the Flutter app).
+lib_vtop = { path = "../rust" }
+jni = "0.21"
+tokio = { version = "1", features = ["rt-multi-thread"] }
+serde = "1"
+serde_json = "1"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true
